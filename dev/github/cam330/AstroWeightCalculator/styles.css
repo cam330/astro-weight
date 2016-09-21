@@ -1,0 +1,35 @@
+.body
+{
+ margin:auto;
+}
+
+#submit
+{
+ background:blue;
+ border-radius:5px;
+ color:white;
+ width:100px;
+}
+
+#weight
+{
+  border-radius:5px;
+  width:200px;
+}
+
+#labels
+{
+  font-size:1.25em;
+}
+
+#planet
+{
+ height:33px;
+ width:200px;
+}
+
+#myp
+{
+ text-align:center;
+ font-size:3em;
+}
