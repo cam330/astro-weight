@@ -1,11 +1,16 @@
-.body
+body
 {
- margin:auto;
+	padding: 10px 0 80px;
+}
+
+h1
+{
+ text-align:center;
 }
 
 #submit
 {
- background:blue;
+ background:#66ccff;
  border-radius:5px;
  color:white;
  width:100px;
@@ -15,10 +20,20 @@
 {
   border-radius:5px;
   width:200px;
+  height:20px;
 }
 
-#labels
+div
 {
+  height: 100px;
+  width: 400px;
+  margin: auto;
+  display: inline-block;
+}
+
+div label
+{
+ display:block;
   font-size:1.25em;
 }
 
@@ -26,10 +41,13 @@
 {
  height:33px;
  width:200px;
+ font-size:1.25em;
 }
 
 #myp
 {
- text-align:center;
- font-size:3em;
+	text-align: center;
+	font-size: 2em;
+	color: red;
+}
 }
