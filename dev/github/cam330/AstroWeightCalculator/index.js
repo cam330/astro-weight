@@ -1,4 +1,5 @@
 var planets = [
+  {planet: 'Choose One', gravity:0},
   {planet: 'Sun', gravity: 27.9},
   {planet: 'Mercury', gravity: 0.377},
   {planet: 'Venus', gravity: 0.9032},
@@ -11,6 +12,11 @@ var planets = [
   {planet: 'Neptune', gravity: 1.148},
   {planet: 'Pluto', gravity: 0.06}
 ];
+
+function reverse(s){
+    return s.split("").reverse().join("");
+}
+document.getElementById("myh1").innerHTML = reverse("Astro Weight Calculator");
 
 var selects = document.getElementById('planet');
 for(var i = 0; i<planets.length; i++){
@@ -25,6 +31,26 @@ function calculate(){
   var weight = document.getElementById("weight").value; 
   var planetIndex = document.getElementById("planet").selectedIndex;
   var gravity = planets[planetIndex].gravity;
-  document.getElementById("myp").innerHTML =("If you were on " +planets[planetIndex].planet + " you would weigh " + weight*gravity+ " pounds!");
+  var theText = "If you were on ";
+  if (planetIndex === 1 || planetIndex === 5) {
+
+    theText = "If you were on the ";
+  }
+  if(isNaN(weight))
+  {
+    alert("How about you learn what a number is...");
+    document.getElementById("weight").value = '';
+    window.open('https://www.youtube.com/watch?v=pbRU3lsGS0M');
+
+  } 
+  else if(planetIndex === 0){
+
+    alert("Choose a planet!");
+
+  }else
+  {
+  var calculatedWeight = weight*gravity;
   
+  document.getElementById("myp").innerHTML =(theText +planets[planetIndex].planet + " you would weigh " + Math.round(calculatedWeight * 100)/100 + " pounds!");
+  }
 }
