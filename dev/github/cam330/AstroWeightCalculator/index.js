@@ -1,3 +1,5 @@
+
+//The array of planets and gravity
 var planets = [
   {planet: 'Choose One', gravity:0},
   {planet: 'Sun', gravity: 27.9},
@@ -13,6 +15,8 @@ var planets = [
   {planet: 'Pluto', gravity: 0.06}
 ];
 
+// To reverse the title
+
 function reverse(s){
     return s.split("").reverse().join("");
 }
@@ -23,9 +27,10 @@ for(var i = 0; i<planets.length; i++){
   var planetName = planets[i].planet;
   var opt = document.createElement('option');
   opt.innerHTML = planetName;
-//  opt.value = planets[i];
   selects.appendChild(opt);
 }
+
+//The submit button function
 
 function calculate(){
   var weight = document.getElementById("weight").value; 
