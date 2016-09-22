@@ -8,6 +8,20 @@ h1
  text-align:center;
 }
 
+div
+{
+  height: 100px;
+  width: 400px;
+  margin: auto;
+  display: inline-block;
+}
+
+div label
+{
+ display:block;
+  font-size:1.25em;
+}
+
 #submit
 {
  background:#66ccff;
@@ -23,20 +37,6 @@ h1
   height:20px;
 }
 
-div
-{
-  height: 100px;
-  width: 400px;
-  margin: auto;
-  display: inline-block;
-}
-
-div label
-{
- display:block;
-  font-size:1.25em;
-}
-
 #planet
 {
  height:33px;
@@ -49,5 +49,5 @@ div label
 	text-align: center;
 	font-size: 2em;
 	color: red;
-}
+
 }
